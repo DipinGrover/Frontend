@@ -1,0 +1,39 @@
+
+
+#lg-1 {
+border: 2px solid ;
+width: 300px;
+height: 100px;
+background: linear-gradient(45deg,red,blue);
+}
+
+#rainbow{
+border: 2px solid ;
+width: 300px;
+height: 100px;  
+background: linear-gradient(to top, violet ,indigo,blue,green,yellow,orange, red);
+}
+
+#radial{
+border: 2px solid ;
+width: 300px;
+height: 100px;  
+background: radial-gradient(blue,red);
+}
+
+#timepaas{
+    text-decoration-line: underline;
+    text-decoration-color: green;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 3px;
+}
+
+@font-face {
+    font-family: 'myfont';
+    src: url(1.ttf);
+}
+#custom-font{
+    font-family: 'myfont';
+    font-size: 30px;
+    font-weight: bold;
+}

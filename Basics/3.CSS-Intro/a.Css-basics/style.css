@@ -1,0 +1,76 @@
+/* * {} */
+    /* this is universal selector ,whatever you write here is applied to everything  */
+
+
+
+body{
+    background-color: #f5f0f0;
+}
+
+header {
+    background-color: white;
+}
+
+.mid-text {
+    font-size: medium;
+    font-weight: bolder;
+}
+
+#head-text {
+    text-decoration-line: underline;
+    text-decoration-color: rgb(39, 103, 230);
+    text-decoration-style : dotted;
+    text-decoration-thickness: 3px;
+}   
+
+input[disabled] {
+    background-color: green;
+}
+a[href="https://www.youtube.com/"] {
+    color: maroon;
+}
+
+div .extra {
+    /* .extra elements that are decendents of div */
+    text-decoration-line: underline;
+}
+
+div >span{
+     /* span that are direct child of div */
+     background-color: blueviolet;
+}
+
+h2 + h4{
+    /* matches those div that are next sibling of h2 and have same parent */
+    background-color: burlywood;
+}
+
+a ~ p{
+    /* matches hose p that are siblings to a but not mandatory to be next sibling but shiuld have same parent */
+    font-size: 15px;
+}
+
+a:visited{
+    color: red;
+}
+
+div::before{
+    /* adds .. b3ffore the content of actual div*/
+    content: "...";
+}
+
+div::after{
+    /* adds .. after the content of actual div */
+    content: "...";
+}
+
+/* div :first-child{ */
+    /* this means all the first child of div should be selected */
+    
+
+
+/* div:first-child{ */
+    /* this means all the div who the first child of parent  */
+
+
+
