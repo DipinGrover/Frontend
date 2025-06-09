@@ -1,0 +1,48 @@
+html{
+    /* unless changed , evry element have box-sizing as border-box */
+    box-sizing: border-box; 
+    /* all tags inside html will have box -sizing as border-box */
+}
+
+* , *:before , *:after 
+{
+    /* we allow the child to follow the parent box-sizing */
+    box-sizing: inherit; 
+     /* if we change boxsizing of parent container then child will inherit the same boz sizing */
+     /* lets say if parent have box-sizing as content box then child elements will also have box-sizing as content box */
+}
+
+
+#demo{
+    /* border: solid red 5px; */
+    /* this is a shoethand property  */
+
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+
+    padding: 10px;
+    
+    width: 200px;
+
+    margin-bottom: 10px;
+}
+
+#demo2{
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+
+    padding: 10px;
+    
+    width: 200px;
+
+    box-sizing: content-box;
+}
+
+#demo3{
+    border: solid blue 10px;
+    /* natural width it will take width : 100% */
+    
+    width: 150px;
+}
