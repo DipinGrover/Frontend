@@ -1,0 +1,189 @@
+:root{
+    --Rhapsody_In_Blue : #012E40;
+    --Midnight_Green : #024959;
+    --Green_Spool : #026773;
+    --Modal_Blue : #3CA6A6;
+    --China_Doll : #F2E3D5
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::before , *::after{
+    box-sizing: inherit;
+}
+
+body{
+    color: white;
+    background-color: var(--Rhapsody_In_Blue);
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+
+    /* headings are assigned by default margin of 1 rem so we are modifying it to make custom styling  */
+    /* em is relative size unit that depends on parents size  */
+    /* rem is relatable size unit that depends on html size  */
+
+    margin: 0;
+
+
+
+    /* in vertical direction in margins they do not gets added as you wish */
+    /* if upper element have margin of 10 px and lower have margin of 10 px then margin in vertical direction would be 10 px only not 20  */
+    /* larger margin value will be considered */
+
+    
+}
+
+#intro p{
+    font-size: 1.5 rem;
+    line-height: 1.5;
+
+}
+
+.name span{
+    display: block;
+    color: var(--Modal_Blue);
+    font-size: 3rem;
+}
+
+#intro {
+    margin: 1rem 3rem 5rem 3rem;
+    max-width: 1000px;
+
+}
+
+.profile{
+    padding-bottom: 5rem;
+}
+
+#intro h2{
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+#experience ul{
+    margin: 0;
+    padding: 0;
+}
+
+#experience li{
+    list-style-type: none;
+    padding: 1rem;
+}
+
+#experience a{
+    color: white;
+}
+
+#hire{
+    /* border: solid red 1px; */
+    width: 400px;
+    text-align: center;
+    margin: 0 auto; 
+    padding: 3rem 0;
+
+    background-color: var(--Modal_Blue);
+    /* border: solid red 1px;   */
+    /* just for refernce for div  */
+}
+
+#hire p:last-child {
+    margin-top: 3rem;
+}
+
+.hire_me{
+    /* border: solid yellow 1px; */
+    background-color: var(--Modal_Blue);
+}
+
+nav ul{
+    display: flex;
+    
+    justify-content: center;
+    gap: 2rem;
+    margin:0;
+    padding:0.5rem;
+
+    flex-flow: row wrap;
+
+}
+
+nav li{
+    list-style-type: none;
+
+    
+}
+
+nav #first{
+    /* flex-grow: 1; */
+    /* we will bring it back for desktop design but we are now writing it for mobile design */
+    flex-basis: 100%;
+    font-size: 2rem;
+    margin-left: 2.5rem;
+}
+
+
+nav a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: #32a852;
+}
+
+.button {
+    background-color: #d1a728;
+    height: 1.8rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    padding-bottom: 0.2 rem;
+}
+
+.button:hover{
+    background: linear-gradient(90deg,rgba(201, 68, 88, 1) 9%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+
+}
+
+@media (min-width: 600px)
+{
+    nav #first{
+        flex-grow: 1; /*this is for desktop or bigger display*/
+        flex-basis: auto;
+    }
+
+}
+
+
+
+.segregtion{
+    height: 2px;
+    background: linear-gradient(90deg,rgba(201, 68, 88, 1) 9%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+
+.very_small_text{
+    font-size: 0.8em
+}
+
+footer{
+    /* border: solid red 1px; */
+
+    width: 25em;
+
+    margin: 2em auto;
+
+    padding: 1rem 0.5em;
+
+    text-align: center;
+}
+
+nav{
+    background-color: var(--Midnight_Green);
+}

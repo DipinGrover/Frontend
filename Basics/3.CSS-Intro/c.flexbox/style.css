@@ -1,0 +1,89 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before , *:after{
+    box-sizing: inherit;
+}
+
+#parent {
+    /* flex container */
+    border: solid red 10px;
+    height: 500px;
+    display: flex; 
+    /* now flex is enabled */
+    flex-direction: row;
+    /* all content comes in a single row (by default) */
+    /* flex-direction: column; */
+    /* all content comes in a single column */
+    /* we can also give vlue like row-reverse and column-reverse */
+
+    /* flex-wrap: nowrap; */
+    /* by default value*/
+    /* it helps us to give enough space to every content and if some div is not getting enough space
+    it puuts them in next line 
+     */
+
+    flex-wrap: wrap;
+
+
+
+
+    flex-flow: row wrap;/* combined property of flex direction and flex wrap*/
+
+    justify-content: start; /*it helps us to arrange items on main axis other values center ,end */
+
+    justify-content: space-evenly;
+    /*to give evenly spacing on left and right */
+    /* justify-content: space-between; */
+    /* to give equal spacing between the itmes except left space of first item and right space of last item*/
+    /* justify-content: space-around;  */
+    /*it gives x/2 spacing on left of first item and right of last item and in between it gives x amount of space*/
+
+    /* align-items: start; */
+    /*help us to align items along cross axis , other values are center ,stretch , end*/
+    /* align-items: end; */
+    /* align-items: center; */
+
+    justify-content: start ;
+    align-content: start;
+    align-items: center;
+
+
+
+    /* align-content: start; */
+    /*help us to set the space betwwen items on cross axis*/
+    /* align-content: end; */
+    /* align-content: center; */
+    /* align-content: space-evenly; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+
+
+    }
+
+#parent div{
+    /* flex items */
+    border: solid blue 3px;
+    background-color: bisque;
+    padding: 20px;
+    min-width: 100px;
+    /* max-width: 200px;    */
+    max-height: 100px;
+}
+
+#child1
+{
+    /* flex-basis: 100%; */
+    /* it will make child 1 width 100% of parent and rest items will move to next line */
+    flex-grow: 3; 
+    /*allocates the remaining empty space to child 1*/
+
+}
+
+#child2{
+    flex-grow:1;
+    /* allocates the remaing space in 3:1 ratio to child 1 and child 2
+    it means 75% of remaing empty space goes to child 1 and rest 25% remaing space goes to child 2 */
+    
+}
