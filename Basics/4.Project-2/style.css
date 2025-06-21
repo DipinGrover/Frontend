@@ -187,3 +187,48 @@ footer{
 nav{
     background-color: var(--Midnight_Green);
 }
+
+.my-pic{
+    /* height of parent div */
+    max-width: 500px;
+    max-height: 350px;
+    
+}
+
+.my-pic img{
+    width: 100%;
+
+}
+
+#experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+}
+
+#exp-list{
+    border: solid white 2px;
+    border-radius: 5px;
+    max-width: 500px;
+
+    background-color: var(--Modal_Blue);
+}
+
+.my-pic{
+    margin: 1rem 0;
+}
+
+#exp-head{
+    /* border: solid red 1px; */
+    /* width: 25rem; */
+
+    text-align: center;
+
+    margin: 0 auto;
+    background-color: var(--Modal_Blue);
+}
+
+#heading{
+    padding: 1rem 0;
+}
