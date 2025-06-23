@@ -1,0 +1,79 @@
+html {
+    box-sizing: border-box;
+}
+
+*,*::before,*::after {
+    box-sizing: inherit;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.static{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius : 50%
+
+}
+
+.moving{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50%;
+    
+}
+
+.moving:hover{
+    transform: rotate(180deg);
+    /* transform: translate(200px); */
+    background-color: red;
+
+    transition-duration: 5s;
+    /* it is the duration of transition */
+
+    transition-delay: 2s; 
+    /* we have to wait for 2s before the transition start */
+
+    transition-property: all;
+    /* we can add the transition property */
+
+    transition-timing-function: ease-out;
+
+}
+
+@keyframes rotater{
+    0%{
+        transform: translateX(-500px);
+        background-color: green;
+    }
+    50%
+    {
+        transform: translateX(500px);
+        background-color: blue
+    }
+    100%
+    {
+        transform: translateX(-500px);
+        background-color: burlywood;
+    }
+}
+
+
+
+.moving
+{
+    animation-name: rotater;
+    animation-iteration-count :infinite;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+
+}
+
+
+
