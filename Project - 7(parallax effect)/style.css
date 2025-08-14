@@ -1,0 +1,105 @@
+/* setting border box in html , box sizing inherit psuedo elements and margin and padding 0 in body  */
+html{
+    box-sizing: border-box;
+}
+
+*,*::after,*::before
+{
+    box-sizing: inherit;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.first_image , .second_image , .third_image , .fourth_image
+{
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+    /* these  properties applied to all  */
+}
+
+/* assigning images here  */
+.first_image
+{
+    background-image: url(Images/1.jpg);
+    min-height: 600px;
+    opacity: 0.8; 
+    /* opacity 0 makes it full white and 1 make it full clear */
+    
+}
+
+.second_image
+{
+    background-image: url(Images/2.jpg);
+    min-height: 600px;
+}
+
+.third_image
+{
+    background-image: url(Images/3.jpg);
+    min-height: 600px;
+}
+
+.fourth_image
+{
+    background-image: url(Images/4.jpg);
+    min-height: 600px;
+    opacity: 0.8;
+}
+
+section{
+    text-align: center;
+    padding: 3rem 4rem;
+}
+
+.light_section
+{
+    background-color: #b9bcbd;
+   
+}
+
+.dark_section
+{
+    background-color: #47464a;
+    color: white;
+}
+
+
+.image 
+{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* using above three we can center text on image */
+
+    position: relative;
+} 
+
+/* there is another way to ceneter content on image  */
+
+.image div{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2rem ;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+
+.first_image div{
+    color: black;
+    background-color: #9a9da1;
+    git 
+}
+
+
+
+
+
